@@ -1,11 +1,10 @@
 <template>
   <v-container>
     <v-layout wrap>
-      <v-flex xs12 >
-        <v-card>
-          
-          <coin-box v-for="price,coin in upbit" :coin="coin" :price="price" :key="coin"/>
-        </v-card>
+      <v-flex xs12 v-for="price,coin in upbit"  :key="coin">
+        
+          <coin-box :coin="coin" :name="name" :price="price" />
+        
       </v-flex>
     </v-layout>
   </v-container>
@@ -24,17 +23,21 @@ import coinList from "@/assets/coins.json"
     data: () => ({
       coins: coinList,
       coinNames : [],
-      coinCode:[],
-      upbit: {}
+      coinCodes:[],
+      upbitList: []
     }),
     async created(){
       this.coins.map(data => {
-        this.coinNames.push(data.coin)
+        this.coinCodes.push(data.coin)
+        this.upbitList.push({
+          coinCode: data.coin,
+          coinName: data.name,
+          price: 0
+          })
       })
-      this.coinNames.map(data => {
-        this.upbit[data] = undefined
+      this.coinCodes.map(data => {
+        this.upbit[data] = 0
       })
-      console.log(this.upbit)
     },
     async mounted(){
       this.connection = new W3CWebSocket("wss://api.upbit.com/websocket/v1")
@@ -50,10 +53,10 @@ import coinList from "@/assets/coins.json"
       
       this.connection.onopen = function() {
         var subscribe_fmt = JSON.stringify([ 
-            {'ticket' :'test'},
+            {'ticket' :'upbit-chrome-extension'},
             {
                 "type": "ticker", // ticker -> 현재가, trade -> 체결, orderbook => 호가
-                "codes":self.coinNames, // 수신 시세 종목 정보 (대문자)
+                "codes":self.coinCodes, // 수신 시세 종목 정보 (대문자)
                 "isOnlyRealtime": true // 실시간 시세만
             },
             {"format":"SIMPLE"} //# simple -> 간소화,

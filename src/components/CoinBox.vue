@@ -1,11 +1,11 @@
 <template>
     <v-card>
-        <div>
+        <v-chip outlined>
         {{ coin }}
-        </div>
-        <div>
+        </v-chip>
+        <v-chip outlined>
         {{ price }}
-        </div>
+        </v-chip>
     </v-card>
 </template>
 
