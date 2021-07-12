@@ -1,0 +1,419 @@
+[
+    {
+        "coin" : "KRW-BTC",
+        "name" : "비트코인"
+    },
+    {
+        "coin" : "KRW-ETH",
+        "name" : "이더리움"
+    },
+    {
+        "coin" : "KRW-CBK",
+        "name" : "코박토큰"
+    },
+    {
+        "coin" : "KRW-AXS",
+        "name" : "엑시인피니티"
+    },
+    {
+        "coin" : "KRW-FLOW",
+        "name" : "플로우"
+    },
+    {
+        "coin" : "KRW-AQT",
+        "name" : "알파쿼크"
+    },
+    {
+        "coin" : "KRW-EOS",
+        "name" : "이오스"
+    },
+    {
+        "coin" : "KRW-XRP",
+        "name" : "리플"
+    },
+    {
+        "coin" : "KRW-SAND",
+        "name" : "샌드박스"
+    },
+    {
+        "coin" : "KRW-STRAX",
+        "name" : "스트라티스"
+    },
+    {
+        "coin" : "KRW-STX",
+        "name" : "스택스"
+    },
+    {
+        "coin" : "KRW-SAND",
+        "name" : "샌드박스"
+    },
+    {
+        "coin" : "KRW-TON",
+        "name" : "톤"
+    },
+    {
+        "coin" : "KRW-ETC",
+        "name" : "이더리움클래식"
+    },
+    {
+        "coin" : "KRW-DAWN",
+        "name" : "던프로토콜"
+    },
+    {
+        "coin" : "KRW-DOGE",
+        "name" : "도지코인"
+    },
+    {
+        "coin" : "KRW-STRK",
+        "name" : "스트라이크"
+    },
+    {
+        "coin" : "KRW-MED",
+        "name" : "메디블록"
+    },
+    {
+        "coin" : "KRW-SSX",
+        "name" : "썸씽"
+    },
+    {
+        "coin" : "KRW-META",
+        "name" : "메타디움"
+    },
+    {
+        "coin" : "KRW-MANA",
+        "name" : "디센트럴트럴랜드"
+    },
+    {
+        "coin" : "KRW-MTL",
+        "name" : "메탈"
+    },
+    {
+        "coin" : "KRW-BORA",
+        "name" : "보라"
+    },
+    {
+        "coin" : "KRW-MLK",
+        "name" : "밀크"
+    },
+    {
+        "coin" : "KRW-ONG",
+        "name" : "온톨로지가스"
+    },
+    {
+        "coin" : "KRW-PLA",
+        "name" : "플레이댑"
+    },
+    {
+        "coin" : "KRW-CHZ",
+        "name" : "플레이댑"
+    },
+    {
+        "coin" : "KRW-CHZ",
+        "name" : "칠리즈"
+    },
+    {
+        "coin" : "KRW-UPP",
+        "name" : "센티넬프로토콜"
+    },
+    {
+        "coin" : "KRW-SNT",
+        "name" : "스테이터스네트워크토크"
+    },
+    {
+        "coin" : "KRW-TFUEL",
+        "name" : "쎄타퓨엘"
+    },
+    {
+        "coin" : "KRW-FCT2",
+        "name" : "피르마체인"
+    },
+    {
+        "coin" : "KRW-SBD",
+        "name" : "스팀달러"
+    },
+    {
+        "coin" : "KRW-STEEM",
+        "name" : "스팀"
+    },
+    {
+        "coin" : "KRW-MVL",
+        "name" : "엠블"
+    },
+    {
+        "coin" : "KRW-RFR",
+        "name" : "리퍼리움"
+    },
+    {
+        "coin" : "KRW-VET",
+        "name" : "비체인"
+    },
+    {
+        "coin" : "KRW-ENJ",
+        "name" : "엔진코인"
+    },
+    {
+        "coin" : "KRW-ADA",
+        "name" : "에이다"
+    },
+    {
+        "coin" : "KRW-DKA",
+        "name" : "디카르고"
+    },
+    {
+        "coin" : "KRW-HUNT",
+        "name" : "헌트"
+    },
+    {
+        "coin" : "KRW-GAS",
+        "name" : "가스"
+    },
+    {
+        "coin" : "KRW-QTUM",
+        "name" : "퀀텀"
+    },
+    {
+        "coin" : "KRW-BTT",
+        "name" : "비트토렌트"
+    },
+    {
+        "coin" : "KRW-MOC",
+        "name" : "모스코인"
+    },
+    {
+        "coin" : "KRW-XLM",
+        "name" : "스텔라루멘"
+    },
+    {
+        "coin" : "KRW-HUM",
+        "name" : "휴먼스케이프"
+    },
+    {
+        "coin" : "KRW-DOT",
+        "name" : "폴카닷"
+    },
+    {
+        "coin" : "KRW-CRO",
+        "name" : "크립토닷컴체인"
+    },
+    {
+        "coin" : "KRW-LINK",
+        "name" : "체인링크"
+    },
+    {
+        "coin" : "KRW-MBL",
+        "name" : "무비블록"
+    },
+    {
+        "coin" : "KRW-STPT",
+        "name" : "에스티피"
+    },
+    {
+        "coin" : "KRW-ELF",
+        "name" : "엘프"
+    },
+    {
+        "coin" : "KRW-WAVES",
+        "name" : "웨이브"
+    },
+    {
+        "coin" : "KRW-BCH",
+        "name" : "비트코인캐시"
+    },
+    {
+        "coin" : "KRW-BTG",
+        "name" : "비트코인골드"
+    },
+    {
+        "coin" : "KRW-ICX",
+        "name" : "아이콘"
+    },
+    {
+        "coin" : "KRW-ATOM",
+        "name" : "코스모스"
+    },
+    {
+        "coin" : "KRW-NEO",
+        "name" : "네오"
+    },
+    {
+        "coin" : "KRW-ARDR",
+        "name" : "아더"
+    },
+    {
+        "coin" : "KRW-POLY",
+        "name" : "폴리매쓰"
+    },
+    {
+        "coin" : "KRW-SC",
+        "name" : "시아코인"
+    },
+    {
+        "coin" : "KRW-AERGO",
+        "name" : "아르고"
+    },
+    {
+        "coin" : "KRW-AHT",
+        "name" : "아하토큰"
+    },
+    {
+        "coin" : "KRW-IQ",
+        "name" : "에브리피디아"
+    },
+    {
+        "coin" : "KRW-QKC",
+        "name" : "쿼크체인"
+    },
+    {
+        "coin" : "KRW-POWR",
+        "name" : "파워렛저"
+    },
+    {
+        "coin" : "KRW-XEM",
+        "name" : "넴"
+    },
+    {
+        "coin" : "KRW-CRE",
+        "name" : "캐리프로토콜"
+    },
+    {
+        "coin" : "KRW-SXP",
+        "name" : "스와이프"
+    },
+    {
+        "coin" : "KRW-LOOM",
+        "name" : "룸네트워크"
+    },
+    {
+        "coin" : "KRW-XTZ",
+        "name" : "테조스"
+    },
+    {
+        "coin" : "KRW-ZIL",
+        "name" : "질리카"
+    },
+    {
+        "coin" : "KRW-LSK",
+        "name" : "리스크"
+    },
+    {
+        "coin" : "KRW-THETA",
+        "name" : "쎄타토큰"
+    },
+    {
+        "coin" : "KRW-TRX",
+        "name" : "트론"
+    },
+    {
+        "coin" : "KRW-PUNDIX",
+        "name" : "펀디엑스"
+    },
+    {
+        "coin" : "KRW-OMG",
+        "name" : "오미세고"
+    },
+    {
+        "coin" : "KRW-HIVE",
+        "name" : "하이브"
+    },
+    {
+        "coin" : "KRW-STMX",
+        "name" : "스톰엑스"
+    },
+    {
+        "coin" : "KRW-ONT",
+        "name" : "온톨로지"
+    },
+    {
+        "coin" : "KRW-MFT",
+        "name" : "메인프레임"
+    },
+    {
+        "coin" : "KRW-ORBS",
+        "name" : "오브스"
+    },
+    {
+        "coin" : "KRW-ARK",
+        "name" : "아크"
+    },
+    {
+        "coin" : "KRW-BCHA",
+        "name" : "비트코인캐시에이비씨"
+    },
+    {
+        "coin" : "KRW-SRM",
+        "name" : "세럼"
+    },
+    {
+        "coin" : "KRW-TT",
+        "name" : "썬더토큰"
+    },
+    {
+        "coin" : "KRW-LTC",
+        "name" : "라이트코인"
+    },
+    {
+        "coin" : "KRW-WAXP",
+        "name" : "왁스"
+    },
+    {
+        "coin" : "KRW-JST",
+        "name" : "저스트"
+    },
+    {
+        "coin" : "KRW-STORJ",
+        "name" : "스토리지"
+    },
+    {
+        "coin" : "KRW-HBAR",
+        "name" : "헤데라해시크래프"
+    },
+    {
+        "coin" : "KRW-ZRX",
+        "name" : "제로엑스"
+    },
+    {
+        "coin" : "KRW-KAVA",
+        "name" : "카바"
+    },
+    {
+        "coin" : "KRW-CVC",
+        "name" : "시빅"
+    },
+    {
+        "coin" : "KRW-GRS",
+        "name" : "크로스톨코인"
+    },
+    {
+        "coin" : "KRW-GLM",
+        "name" : "골렘"
+    },
+    {
+        "coin" : "KRW-BSV",
+        "name" : "비트코인에스브이"
+    },
+    {
+        "coin" : "KRW-KNC",
+        "name" : "카이버네트워크"
+    },
+    {
+        "coin" : "KRW-ANKR",
+        "name" : "앵커"
+    },
+    {
+        "coin" : "KRW-IOST",
+        "name" : "아이오에스티"
+    },
+    {
+        "coin" : "KRW-BAT",
+        "name" : "베이직어텐션토큰"
+    },
+    {
+        "coin" : "KRW-REP",
+        "name" : "어거"
+    },
+    {
+        "coin" : "KRW-IOTA",
+        "name" : "아이오타"
+    }
+]
+
