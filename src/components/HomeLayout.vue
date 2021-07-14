@@ -13,7 +13,6 @@ import { w3cwebsocket as W3CWebSocket } from "websocket";
 import encoding from "text-encoding";
 import CoinBox from "@/components/CoinBox"
 import coinList from "@/assets/coins.json"
-import {mapActions} from 'vuex'
   export default {
     name: 'HomeLayout',
     components:{
@@ -30,12 +29,7 @@ import {mapActions} from 'vuex'
         return this.$store.state.coinPrices;
       }
     },
-    methods: { 
-      ...mapActions({ 
-        add: 'setCoinPrice' 
-      }),
     
-    },
 
     async created(){
       this.$store.state.coinPrices = [];
