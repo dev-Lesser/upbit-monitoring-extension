@@ -4,7 +4,7 @@
             {{ coin }} {{info}}
         </v-chip>
         <v-chip outlined >
-            {{ value }} 원
+            {{ value }}
         </v-chip>
 
     </v-card>
