@@ -1,7 +1,7 @@
 <template>
     <v-card height="100" class="ma-3 pa-3 coin_box">
         <v-chip outlined >
-            {{ coin }} {{info}}
+            {{ coin }} {{ info }}
         </v-chip>
         <v-chip outlined >
             {{ value }}
