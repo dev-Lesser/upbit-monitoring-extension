@@ -3,7 +3,7 @@
         <v-chip outlined>
             {{ coin }} {{ info }}
         </v-chip>
-        <v-chip outlined >
+        <v-chip outlined>
             {{ value }}
         </v-chip>
 
