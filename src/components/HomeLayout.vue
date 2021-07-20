@@ -1,10 +1,8 @@
 <template>
-  <v-container>
+  <v-container fluid>
     <v-layout wrap>
-      <v-flex xs12 v-for="price,coin in upbit"  :key="coin">
-        
-          <coin-box :coin="coin" :name="name" :price="price" />
-        
+      <v-flex xs12 sm6 md3 v-for="i, key in coinCodes" :key="key">
+          <coin-box :coin="i" :info="coinNames[key]"  :value="$store.state.coinPrices[key]"/>
       </v-flex>
     </v-layout>
   </v-container>
@@ -15,8 +13,9 @@ import { w3cwebsocket as W3CWebSocket } from "websocket";
 import encoding from "text-encoding";
 import CoinBox from "@/components/CoinBox"
 import coinList from "@/assets/coins.json"
+import {mapActions} from 'vuex'
   export default {
-    name: 'HelloWorld',
+    name: 'HomeLayout',
     components:{
       CoinBox
     },
@@ -24,31 +23,49 @@ import coinList from "@/assets/coins.json"
       coins: coinList,
       coinNames : [],
       coinCodes:[],
-      upbitList: []
+      
     }),
+    computed:{
+      coinPrices(){
+        return this.$store.state.coinPrices;
+      }
+    },
+    methods: { 
+      ...mapActions({ 
+        add: 'setCoinPrice' 
+      }),
+    
+    },
+
     async created(){
+      this.$store.state.coinPrices = [];
       this.coins.map(data => {
         this.coinCodes.push(data.coin)
-        this.upbitList.push({
-          coinCode: data.coin,
-          coinName: data.name,
-          price: 0
-          })
+        this.coinNames.push(data.name)
+        this.$store.state.coinPrices.push(null)
       })
-      this.coinCodes.map(data => {
-        this.upbit[data] = 0
-      })
+      
     },
     async mounted(){
+      let self = this;
       this.connection = new W3CWebSocket("wss://api.upbit.com/websocket/v1")
       this.connection.binaryType = "arraybuffer";
-      let self = this;
+      
       this.connection.onmessage = function(event) {        
         const enc = new encoding.TextDecoder("utf-8");
         const arr = new Uint8Array(event.data);
         const data = JSON.parse(enc.decode(arr));
-        console.log(data)
-        self.upbit[data.cd] = data.tp
+        // self.add([data.cd, data.tp])
+        // console.log(data)
+        for (var i in self.coinCodes){
+          // console.log(coin)
+          if (self.coinCodes[i] == data.cd){
+            self.$store.state.coinPrices[i]=data.tp
+            self.$store.state.coinPrices.push(data.tp)
+            self.$store.state.coinPrices.pop()
+            // console.log(self.$store.state.coinPrices.length )
+          }
+        }        
       }
       
       this.connection.onopen = function() {
@@ -68,10 +85,6 @@ import coinList from "@/assets/coins.json"
 
       },
   
-  methods:{
-    send(){
-      
-    }
-  }
+
   }
 </script>
